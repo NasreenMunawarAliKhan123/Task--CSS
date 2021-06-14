@@ -14,72 +14,167 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>           
-        
+          <div class="container">
+            <div class="row">
             
-        <label for="fname"><b>FULL NAME:</b></label><br><br>
-            <label for="title">
-                <select id="title">
-                    <option value="please select">--</option>
-                    <option value="mr">Mr</option>
-                    <option value="mrs">Mrs</option>
-                    <option value="miss">Miss</option>
-                </select>
-            <input type="text" id="fname" name="fname" placeholder="First Name"  maxlength="15" required>
-            <input type="text" id="lname" name="lname" placeholder="Last Name" maxlength="15" required><br><br>
-            <label for="email"><b>EMAIL ADDRESS:</b></label><br><br>
-            <input type="email" id="email" placeholder="Please enter your email" pattern=".+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required><br><br>
-            <label for="email"><b>PHONE NUMBER:</b></label><br><br>
-            <input type="tel" id="phonenumber" placeholder="Phone Number" pattern="[0-9]{10}" required><br><br>
-            <label for="birthday"><b>DATE OF BIRTH:</b></label><br><br>
-            <input type="date" id="birthday" name="birthday" required><br><br>
-            <label for="Location"><b>LOCATION:</b></label><br><br>
-                <select id="Location1">
-                    <option value="Chennai">Chennai</option>
-                    <option value="Bangalore">Bangalore</option>
-                    <option value="Coimbatore">Coimbatore</option>
-                    <option value="Trichy">Trichy</option>
-                    <option value="Hyderabad">Hyderabad</option>
+              <label for="fname"><b>FULL NAME:</b></label><br><br>
+                  <label for="title">
+                      <select id="title">
+                          <option value="please select">--</option>
+                          <option value="mr">Mr</option>
+                          <option value="mrs">Mrs</option>
+                          <option value="miss">Miss</option>
+                      </select>
+                  <input type="text" id="fname" name="fname" placeholder="First Name"  maxlength="15" required>
+                  <input type="text" id="lname" name="lname" placeholder="Last Name" maxlength="15" required><br><br>
+                  <label for="email"><b>EMAIL ADDRESS:</b></label><br><br>
+                  <input type="email" id="email" placeholder="Please enter your email" pattern=".+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required><br><br>
+                  <label for="email"><b>PHONE NUMBER:</b></label><br><br>
+                  <input type="tel" id="phonenumber" placeholder="Phone Number" pattern="[0-9]{10}" required><br><br>
+                  <label for="birthday"><b>DATE OF BIRTH:</b></label><br><br>
+                  <input type="date" id="birthday" name="birthday" required><br><br>
+                  <label for="Location"><b>LOCATION:</b></label><br><br>
+                      <select id="Location1">
+                          <option value="Chennai">Chennai</option>
+                          <option value="Bangalore">Bangalore</option>
+                          <option value="Coimbatore">Coimbatore</option>
+                          <option value="Trichy">Trichy</option>
+                          <option value="Hyderabad">Hyderabad</option>
 
-                </select><br><br>
-            <label for="question"><b>HOW MANY IN YOUR PARTY?</b></label><br><br>
-            <input type="text" id="answer" placeholder="Type your response here"><br><br>
-            <label class="checkbox-inline"><b>TYPE OF SERVICE</b></label><br><br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Dine In</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label" for="inlineCheckbox2">Dine Out</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                    <label class="form-check-label" for="inlineCheckbox3">Breakfast</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
-                    <label class="form-check-label" for="inlineCheckbox4">Lunch</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
-                    <label class="form-check-label" for="inlineCheckbox5">Dinner</label>
-                  </div><br><br>
-                  <label class="star_rating"><b>YOUR RATING</b></label>
-                  <div class="rating">
-                       <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
-                  </div>
-                  <div class="form-group">
-                    <label for="Comments">COMMENTS:</label><br><br>
-                    <input type="text" class="form-control" id="comm" name="Comments" placeholder="Type your comments here">
-                  </div><br><br>
-                  
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <!-- <div class="alert alert-success" role="alert">
-                <h4 class="alert-heading">Well done!</h4>
-                <p>You have successfully submitted the survey. Thank you for choosing our Restaurant, we hope to see you again soon!!!</p>
+                      </select><br><br>
+                  <label for="question"><b>HOW MANY IN YOUR PARTY?</b></label><br><br>
+                  <input type="text" id="answer" placeholder="Type your response here"><br><br>
+                  <label class="checkbox-inline"><b>TYPE OF SERVICE</b></label><br><br>
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                          <label class="form-check-label" for="inlineCheckbox1">Dine In</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                          <label class="form-check-label" for="inlineCheckbox2">Dine Out</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">Breakfast</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                          <label class="form-check-label" for="inlineCheckbox4">Lunch</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                          <label class="form-check-label" for="inlineCheckbox5">Dinner</label>
+                        </div><br><br>
+                        <label class="star_rating"><b>YOUR RATING</b></label>
+                        <div class="rating">
+                            <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                        </div>
+                        <div class="form-group">
+                          <label for="Comments"><b>COMMENTS:</b></label><br><br>
+                          <input type="text" class="form-control" id="comm" name="Comments" placeholder="Type your comments here">
+                        </div><br><br>
+                        <table>
+                          <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            <td><label for="q37">Very Satisfied</label></td>
+                            <td></td>
+                            <td></td>
+                            <td><label for="q36"> Satisfied</label></td>
+                            <td></td>
+                            <td></td>
+                            <td><label for="q35">Neutral</label></td>
+                            <td></td>
+                            <td></td>
+                            <td><label for="q34">UnSatisfied</label></td>
+                            <td></td>
+                            <td></td>
+                            <td><label for="q33">Very UnSatisfied</label></td>
+                            
+                            
+                          
+                          </tr>
+                          <tr>
+                            
+                          <td><label for="q37">How satisfied are you?</label></td>
+                          <td></td> 
+                          <td></td>
+                          <td><input type="radio" name="radQ3" value="5" id="q5" 
+                                      title="strongly agree" checked/></td>
+                                      <td></td>
+                                      <td></td>
+                            <td><input type="radio" name="radQ3" value="4" id="q4" 
+                                      title="agree" /></td>
+                                      <td></td>
+                                      <td></td>
+                            <td><input type="radio" name="radQ3" value="3" id="q3" 
+                                      title="Neutral" /></td>
+                                      <td></td>
+                                      <td></td>
+                            <td><input type="radio" name="radQ3" value="2" id="q2"
+                                      title="disagree" /></td>
+                                      <td></td>
+                                      <td></td>
+                            <td><input type="radio" name="radQ3" value="1" id="q1"
+                                      title="strongly disagree" /></td>
+                          </tr>
+                          <tr>
+                            
+                          <td><label for="q37">Food Taste?</label></td>
+                          <td></td> 
+                          <td></td>
+                          <td><input type="radio" name="radQ3" value="5" id="q5" 
+                                      title="strongly agree" checked /></td>
+                                      <td></td>
+                                      <td></td>
+                            <td><input type="radio" name="radQ3" value="4" id="q4" 
+                                      title="agree" /></td>
+                                      <td></td>
+                                      <td></td>
+                            <td><input type="radio" name="radQ3" value="3" id="q3" 
+                                      title="Neutral" /></td>
+                                      <td></td>
+                                      <td></td>
+                            <td><input type="radio" name="radQ3" value="2" id="q2"
+                                      title="disagree" /></td>
+                                      <td></td>
+                                      <td></td>
+                            <td><input type="radio" name="radQ3" value="1" id="q1"
+                                      title="strongly disagree" /></td>
+                          </tr>
+                          <tr>
+                            
+                          <td><label for="q37">Customer hospitality?</label></td>
+                          <td></td> 
+                          <td></td>
+                          <td><input type="radio" name="radQ3" value="5" id="q5" 
+                                      title="strongly agree" checked/></td>
+                                      <td></td>
+                                      <td></td>
+                            <td><input type="radio" name="radQ3" value="4" id="q4" 
+                                      title="agree" /></td>
+                                      <td></td>
+                                      <td></td>
+                            <td><input type="radio" name="radQ3" value="3" id="q3" 
+                                      title="Neutral" /></td>
+                                      <td></td>
+                                      <td></td>
+                            <td><input type="radio" name="radQ3" value="2" id="q2"
+                                      title="disagree" /></td>
+                                      <td></td>
+                                      <td></td>
+                            <td><input type="radio" name="radQ3" value="1" id="q1"
+                                      title="strongly disagree" /></td>
+                          </tr>
+                        </table>
+                        <br><br>
+                  <button type="submit" class="btn btn-primary">Submit</button>
                 
-              </div> -->
-            </form> 
+            </div>
+          </div>
+            
+        </form> 
 
         
 
